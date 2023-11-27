@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 from semversion import version
 
+
 setup(
     name="dir-cli",
     version=version(),
