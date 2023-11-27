@@ -1,12 +1,13 @@
 import click
 import os
+import sys
 from .Command import Command
 from .Group import Group
 
 
 class Root:
     def __init__(self, base_dir="cli"):
-        print(os.path)
+        print(sys.path)
         print(os.getcwd())
         self.base_dir = base_dir
         self.base_path = os.path.join(os.getcwd(), base_dir)
