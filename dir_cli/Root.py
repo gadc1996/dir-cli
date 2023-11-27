@@ -6,6 +6,7 @@ from .Group import Group
 
 class Root:
     def __init__(self, base_dir="cli"):
+        print(os.path)
         self.base_dir = base_dir
         self.base_path = os.path.join(os.getcwd(), base_dir)
 
