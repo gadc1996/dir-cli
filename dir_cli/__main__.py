@@ -1,6 +1,4 @@
-def main():
-    pass
-
+from Root import Root
 
 if __name__ == "__main__":
-    main()
+    Root()
