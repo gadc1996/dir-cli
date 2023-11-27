@@ -19,7 +19,6 @@ class Root:
 
     def _load_commands(self, root: click.Group):
         for item in os.listdir(self.base_dir):
-
             if Group.is_valid(item, self.base_dir):
                 group = Group(item, self.base_dir)
                 root.add_command(group.get())

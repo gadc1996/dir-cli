@@ -10,9 +10,7 @@ setup(
             "dir-cli=dir_cli.__main__:main",
         ],
     },
-    install_requires=[
-        'click'
-    ],
+    install_requires=["click"],
     author="Gabriel Delgado",
     author_email="gadc1996@gmail.com",
     description="Pip module template",

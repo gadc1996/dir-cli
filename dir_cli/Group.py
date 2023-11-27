@@ -3,6 +3,7 @@ import os
 from importlib import import_module
 from .Command import Command
 
+
 class Group:
     def __init__(self, name: str, directory: str) -> None:
         # Construct the module path and extract the name of the command
@@ -19,7 +20,7 @@ class Group:
             if Group.is_valid(item, self.module_path):
                 group = Group(item, self.module_path)
                 base_group.add_command(group.get())
-            
+
             if Command.is_valid(item, self.module_path):
                 command = Command(item, self.module_name)
                 base_group.add_command(command.get())
@@ -28,7 +29,4 @@ class Group:
 
     @staticmethod
     def is_valid(item: str, path: str):
-        return not item.startswith("__") and os.path.isdir(
-            os.path.join(path, item)
-        )
-
+        return not item.startswith("__") and os.path.isdir(os.path.join(path, item))
