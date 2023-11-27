@@ -1,0 +1,2 @@
+def subcommand():
+    """Subcommand"""

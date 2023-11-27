@@ -24,7 +24,7 @@ jobs:
         python-version: '3.11'
 
     - name: Install dependencies
-      run: pip install wheel twine semversion click
+      run: pip install wheel twine semversion
       
     - name: Update version
       run: python -m semversion patch

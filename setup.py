@@ -2,15 +2,17 @@ from setuptools import setup, find_packages
 from semversion import version
 
 setup(
-    name="pip-module-template",
+    name="dir-cli",
     version=version(),
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "semversion=semversion.__main__:main",
+            "dir-cli=dir_cli.__main__:main",
         ],
     },
-    install_requires=[],
+    install_requires=[
+        'click'
+    ],
     author="Gabriel Delgado",
     author_email="gadc1996@gmail.com",
     description="Pip module template",
